@@ -15,7 +15,7 @@ public class CsamDAO {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(
             		// TODO: Update DB port
-                    "jdbc:mysql://localhost:3306/test",
+                    "jdbc:mysql://localhost:3307/test",
                     "test_user",
                     "secret");
         } catch (SQLException ex) {
@@ -69,7 +69,7 @@ public class CsamDAO {
             con.close();
         }catch(Exception ex){ex.printStackTrace();
         }
-        return 0;
+        return status;
     }
     public static int delete(String sid){
         int status=0;
