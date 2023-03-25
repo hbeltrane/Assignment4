@@ -36,7 +36,7 @@ public class EditServlet extends HttpServlet {
 		out.println("<h1>Update Student Profile</h1>");
 		String sid = request.getParameter("sid");
 		Csam e = CsamDAO.getStudentById(sid);
-		out.println("<h1>SID =" + e.getSName() + "</h1>");
+		out.println("<h1>SID =" + sid + "</h1>");
 		out.print("<form action='EditServlet2' method='post'>");
 		out.print("<table>");
 		out.print("<tr><td>St ID :</td><td><input type='text' name='sid' value='" + sid + "'/></td></tr>");
