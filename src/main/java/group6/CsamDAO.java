@@ -69,7 +69,7 @@ public class CsamDAO {
             con.close();
         }catch(Exception ex){ex.printStackTrace();
         }
-        return 0;
+        return status;
     }
     public static int delete(String sid){
         int status=0;
