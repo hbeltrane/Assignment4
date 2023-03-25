@@ -14,7 +14,8 @@ public class CsamDAO {
             // Tomcat Server
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3307/test",
+            		// TODO: Update DB port
+                    "jdbc:mysql://localhost:3306/test",
                     "test_user",
                     "secret");
         } catch (SQLException ex) {
