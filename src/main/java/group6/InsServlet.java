@@ -41,7 +41,7 @@ public class InsServlet extends HttpServlet {
 		out.println("<br><b>" + sname + "</b>");
 		Csam e = new Csam();
 		e.setSid(sid);
-		e.setSname(sname);
+		e.setSName(sname);
 		e.setGpa(gpa);
 		e.setGrade(grade);
 		int status = CsamDAO.save(e);

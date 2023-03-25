@@ -39,7 +39,7 @@ public class EditServlet2 extends HttpServlet {
 		Double gpa = Double.parseDouble(request.getParameter("gpa"));
 		Csam e = new Csam();
 		e.setSid(sid);
-		e.setSname(sname);
+		e.setSName(sname);
 		e.setGrade(grade);
 		e.setGpa(gpa);
 		int status = CsamDAO.update(e);

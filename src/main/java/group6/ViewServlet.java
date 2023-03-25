@@ -42,7 +42,7 @@ public class ViewServlet extends HttpServlet {
 		out.print(
 				"<tr><th>Student Id</th><th>Student Name</th><th> Grade </th><th>GPA</th><th>Edit</th><th>Delete</th></tr>");
 		for (Csam e : list) {
-			out.print("<tr><td>" + e.getSid() + "</td><td>" + e.getSname() + "</td><td>" + e.getGrade() + "</td> <td>"
+			out.print("<tr><td>" + e.getSid() + "</td><td>" + e.getSName() + "</td><td>" + e.getGrade() + "</td> <td>"
 					+ e.getGpa() + "</td>><td><a href='EditServlet?sid=" + e.getSid()
 					+ "'>edit</a></td> <td><a href='DeleteServlet?sid=" + e.getSid() + "'>delete</a></td></tr>");
 		}
